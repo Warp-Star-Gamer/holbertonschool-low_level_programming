@@ -8,11 +8,11 @@
 */
 int main(void)
 {
-char letter;
-for (letter = 'a'; letter <= 'z'; letter += 1)
+char digit;
+for (digit = '0'; digit <= '9'; digit += 1)
 {
-putchar(letter);
-if (letter != '9')
+putchar(digit);
+if (digit != '9')
 {
 putchar(',');
 putchar(' ');
