@@ -7,12 +7,5 @@
 */
 void print_numbers(void)
 {
-printf("0123456789\n");
-/*
-int c;
-for (c = '0'; c <= '9'; c++)
-{
-putchar(c);
+printf("0123456789\n")
 }
-putchar('\n');
-*/}
