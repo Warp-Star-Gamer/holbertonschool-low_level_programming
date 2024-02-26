@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* _isdigit - is uppercase
+* _isdigit - is a digit
 * @c: character
-* Return: 1 if c is uppercase, otherwise return 0.
+* Return: 1 if c is a digit , otherwise return 0.
 */
 int _isdigit(int c)
 {
