@@ -20,4 +20,6 @@ _putchar('\\');
 _putchar('\n');
 w++;
 }
+if (n == 0)
+_putchar('\n');
 }
