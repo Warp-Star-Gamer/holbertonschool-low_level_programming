@@ -2,15 +2,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
-* more_numbers - prints more numbers
+* print_line - prints lines
+* @n: integer
 * Return: void
 */
-void print_diagonal(int n)
+void print_line(int n)
 {
 int i;
 for (i = 0; i < n; i++)
 {
-putchar('\\');
+putchar('_');
 }
 putchar('\n');
 }
