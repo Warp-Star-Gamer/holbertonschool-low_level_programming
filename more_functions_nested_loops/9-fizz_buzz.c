@@ -19,6 +19,7 @@ if (i3 == 0)
 printf("Fizz");
 if (i5 == 0)
 printf("Buzz");
+if (i < 100)
 printf(" ");
 }
 return (0);
