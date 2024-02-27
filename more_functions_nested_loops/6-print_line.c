@@ -5,12 +5,12 @@
 * more_numbers - prints more numbers
 * Return: void
 */
-`
-void print_line(int n)
+void print_diagonal(int n)
 {
 int i;
 for (i = 0; i < n; i++)
 {
-putchar('_');
+putchar('\\');
 }
+putchar('\n');
 }
