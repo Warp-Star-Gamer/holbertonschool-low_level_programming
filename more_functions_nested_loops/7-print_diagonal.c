@@ -13,7 +13,7 @@ int w = 0;
 _putchar('\n');
 for (i = 0; i < n; i++)
 {
-for (j = 0; j <= w; j++)
+for (j = 0; j < w; j++)
 {
 _putchar(' ');
 }
