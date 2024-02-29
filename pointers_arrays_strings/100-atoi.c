@@ -4,13 +4,6 @@
 * @s: string
 * Return: integer
 */
-int isnumber(char c)
-{
-if (c >= '0' && c <= '9')
-return 1;
-return 0;
-}
-
 int _atoi(char* s)
 {
 char c = ' ';
@@ -19,9 +12,9 @@ int neg = 0;
 while (*s)
 {
 c = *s;
-if (c == '-' && isnumber(s[1]))
-break;
-if (isnumber(c))
+if (c == '-')
+neg = 1;
+if (c >= '0' && c <= '9')
 break;
 s++;
 }
