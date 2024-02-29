@@ -4,12 +4,27 @@
 * @s: string
 * Return: integer
 */
-int _atoi(char *s)
+int isnumber(char c)
 {
+if (c >= '0' && c <= '9')
+return 1;
+return 0;
+}
+
+int _atoi(char* s)
+{
+char c = ' ';
 int value = 0;
 int neg = 0;
-while (*s && *s != '-' && (*s < '0' || *s > '9'))
+while (*s)
+{
+c = *s;
+if (c == '-' && isnumber(s[1]))
+break;
+if (isnumber(c))
+break;
 s++;
+}
 if (*s == '-') {
 neg = 1;
 s++;
