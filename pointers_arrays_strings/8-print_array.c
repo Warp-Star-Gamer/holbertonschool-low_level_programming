@@ -4,7 +4,7 @@
 /**
 * print_array - dumps n characters from an array
 * @a: array of integers
-* @n count
+* @n: count
 * Return: void
 */
 void print_array(int *a, int n)
