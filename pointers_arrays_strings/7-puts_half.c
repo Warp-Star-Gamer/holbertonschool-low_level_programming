@@ -1,18 +1,25 @@
 #include "main.h"
 /**
-* print_array - dumps n characters from an array
-* @a: array of integers
-* @n count
+* puts_half - writes half a string
+* @str: string
 * Return: void
 */
-void print_array(int *a, int n)
+void puts_half(char *str)
 {
-int i;
-for (i = 0; i < n; i++)
+int len, draw, skip;
+char *tail;
+
+len = 0;
+tail = str;
+while (*tail)
 {
-printf("%d", *a++);
-if (i < n - 1)
-printf(", ");
+tail++;
+len++;
 }
+draw = len / 2;
+skip = len - draw;
+str += skip;
+while (str < tail)
+_putchar(*str++);
 _putchar('\n');
 }
