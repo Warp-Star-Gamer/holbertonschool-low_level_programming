@@ -1,25 +1,18 @@
 #include "main.h"
 /**
-* puts_half - writes half a string
+* puts2 - writes a string
 * @str: string
 * Return: void
 */
-void puts_half(char *str)
+void puts2(char *str)
 {
-int len, draw, skip;
-char *tail;
-
-len = 0;
-tail = str;
-while (*tail)
+while (*str)
 {
-tail++;
-len++;
+_putchar(*str);
+str++;
+if (*str == 0)
+break;
+str++;
 }
-draw = len / 2;
-skip = len - draw;
-str += skip;
-while (str < tail)
-_putchar(*str++);
 _putchar('\n');
 }
