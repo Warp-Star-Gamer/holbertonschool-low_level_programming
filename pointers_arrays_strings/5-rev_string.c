@@ -1,18 +1,23 @@
-#include "main.h"
 /**
-* puts2 - writes a string
-* @str: string
+* rev_string - reverses a string
+* @s: string
 * Return: void
 */
-void puts2(char *str)
+void rev_string(char* s)
 {
-while (*str)
+char c;
+char *head = s;
+char *tail = s;
+while (*tail)
+tail++;
+tail--;
+while (tail > head)
 {
-_putchar(*str);
-str++;
-if (*str == 0)
-break;
-str++;
+char hd = *head;
+char tl = *tail;
+*tail = hd;
+*head = tl;
+tail--;
+head++;
 }
-_putchar('\n');
 }
