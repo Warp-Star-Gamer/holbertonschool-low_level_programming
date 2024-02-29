@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#INCLUDE <stdlib.h>
 /**
 * print_array - dumps n characters from an array
 * @a: array of integers
