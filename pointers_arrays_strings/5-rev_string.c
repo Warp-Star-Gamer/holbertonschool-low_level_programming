@@ -5,7 +5,6 @@
 */
 void rev_string(char* s)
 {
-char c;
 char *head = s;
 char *tail = s;
 while (*tail)
