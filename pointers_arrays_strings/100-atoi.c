@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
 * _atoi - tranforms a string into a number
 * @s: string
