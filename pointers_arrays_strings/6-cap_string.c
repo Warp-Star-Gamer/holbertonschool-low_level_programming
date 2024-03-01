@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <malloc.h>
+
 /**
 * cap_string - capitalizes a string
 * @s: string
