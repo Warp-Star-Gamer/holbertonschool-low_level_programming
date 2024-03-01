@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <malloc.h>
+
 /**
 * string_toupper - puts to uuper case
 * @s: string
