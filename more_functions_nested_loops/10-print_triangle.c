@@ -9,30 +9,32 @@
 
 int _atoi(char *s)
 {
-char c = ' ';
-unsigned int ret = 0;
+unsigned char* us = (unsigned char*)s;
+unsigned char c = ' ';
+unsigned int ret  = 0;
 int neg = 0;
 if (!s)
 return (0);
 while (1)
 {
-c = *s;
+c = *us;
 if (c == 0)
 break;
 else if (c == '-')
 neg ^= 1;
 else if (c >= '0' && c <= '9')
 break;
-s++;
+us++;
 }
 while (c >= '0' && c <= '9')
 {
-ret *= 10;
-ret += c - '0';
-s++;
-c = *s;
+ret *= (unsigned int)10;
+unsigned char value = (unsigned char)(c - '0');
+ret += value;
+us++;
+c = *us;
 }
-if (ret != 0 && neg)
+if (neg)
 return (-ret);
 return (ret);    
 }
