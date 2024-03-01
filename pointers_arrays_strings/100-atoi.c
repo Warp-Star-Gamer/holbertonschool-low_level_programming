@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 unsigned char value = 0;
-unsigned char *us = (unsigned char*)s;
+unsigned char *us = (unsigned char *)s;
 unsigned char c = ' ';
 unsigned int ret  = 0;
 int neg = 0;
