@@ -10,7 +10,7 @@
 int _atoi(char *s)
 {
 unsigned char value = 0;
-unsigned char* us = (unsigned char*)s;
+unsigned char *us = (unsigned char*)s;
 unsigned char c = ' ';
 unsigned int ret  = 0;
 int neg = 0;
@@ -29,7 +29,7 @@ us++;
 }
 while (c >= '0' && c <= '9')
 {
-ret *= (unsigned int)10;
+ret *= 10;
 value = (unsigned char)(c - '0');
 ret += value;
 us++;
@@ -37,5 +37,5 @@ c = *us;
 }
 if (neg)
 return (-ret);
-return (ret);    
+return (ret);
 }
