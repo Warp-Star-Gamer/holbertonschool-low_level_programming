@@ -1,3 +1,7 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <malloc.h>
+
 /**
 * _strcat - concatenates strings
 * @dest: string
