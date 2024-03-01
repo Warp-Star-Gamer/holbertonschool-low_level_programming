@@ -7,19 +7,32 @@
 * Return: void
 */
 
-void print_triangle(int size)
+int _atoi(char *s)
 {
-int i, j;
-int w = size - 1;
-for (i = 0; i < size; i++)
+char c = ' ';
+unsigned int ret = 0;
+int neg = 0;
+if (!s)
+return (0);
+while (1)
 {
-for (j = 0; j < w; j++)
-_putchar(' ');
-for (j = w; j < size; j++)
-_putchar('#');
-if (i < size - 1)
-_putchar('\n');
-w--;
+c = *s;
+if (c == 0)
+break;
+else if (c == '-')
+neg ^= 1;
+else if (c >= '0' && c <= '9')
+break;
+s++;
 }
-_putchar('\n');
+while (c >= '0' && c <= '9')
+{
+ret *= 10;
+ret += c - '0';
+s++;
+c = *s;
+}
+if (ret != 0 && neg)
+return (-ret);
+return (ret);    
 }
