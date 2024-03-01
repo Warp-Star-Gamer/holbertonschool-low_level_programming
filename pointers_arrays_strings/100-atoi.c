@@ -4,27 +4,33 @@
 * @s: string
 * Return: integer
 */
-int _atoi(char* s)
+
+int _atoi(char *s)
 {
 char c = ' ';
-int value = 0;
+int ret  = 0;
 int neg = 0;
-while (*s)
+if (!s)
+return (0);
+while (1)
 {
 c = *s;
-if (c == '-')
-neg = 1;
-if (c >= '0' && c <= '9')
+if (c == 0)
+break;
+else if (c == '-')
+neg ^= 1;
+else if (c >= '0' && c <= '9')
 break;
 s++;
 }
-if (*s == '-') {
-neg = 1;
+while (c >= '0' && c <= '9')
+{
+ret *= 10;
+ret += c - '0';
 s++;
+c = *s;
 }
-while (*s >= '0' && *s <= '9')
-value = value * 10 + *s++ - '0';
-if (neg)
-value = -value;
-return (value);
+if (ret != 0 && neg)
+ret = -ret;
+return (ret);
 }
