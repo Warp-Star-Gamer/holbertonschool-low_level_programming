@@ -14,7 +14,7 @@ char *head = s;
 int i;
 while (*s)
 {
-for (i = 0; i < sizeof(table); i += 2)
+for (i = 0; i < (int)sizeof(table); i += 2)
 {
 if (*s == table[i] || *s == table[i] + 'A' - 'a')
 {
