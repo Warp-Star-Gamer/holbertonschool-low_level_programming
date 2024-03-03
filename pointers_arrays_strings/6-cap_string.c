@@ -27,7 +27,7 @@ c += 'A' - 'a';
 }
 }
 can_cap = 0;
-for (i = 0; i < sizeof(separators); i++)
+for (i = 0; i < (int)sizeof(separators); i++)
 {
 if (separators[i] == c)
 {
