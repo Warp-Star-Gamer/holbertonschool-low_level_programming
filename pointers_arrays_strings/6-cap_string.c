@@ -9,7 +9,8 @@
 */
 char *cap_string(char *s)
 {
-const char separators[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
+const char separators[] = 
+{' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 char *head = s;
 char can_cap = 1;
 int i;
