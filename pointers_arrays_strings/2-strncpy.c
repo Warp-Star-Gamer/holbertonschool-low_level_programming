@@ -3,13 +3,13 @@
 #include <malloc.h>
 
 /**
-* _strncat - concatenates strings
+* _strncpy - concatenates strings
 * @dest: string
 * @src: string
 * @n: integer
 * Return: string
 */
-char* _strncpy(char* dest, char* src, int n)
+char* _strncpy(char *dest, char *src, int n)
 {
 if (n != 0)
 {
