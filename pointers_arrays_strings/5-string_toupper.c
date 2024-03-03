@@ -7,7 +7,7 @@
 * @s: string
 * Return: string
 */
-char* string_toupper(char *s)
+char *string_toupper(char *s)
 {
 char *head = s;
 while (*s)
