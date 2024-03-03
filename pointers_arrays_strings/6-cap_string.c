@@ -7,7 +7,7 @@
 * @s: string
 * Return: string
 */
-char* cap_string(char* s)
+char *cap_string(char *s)
 {
 const char separators[] = {' ', '\t', '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 char *head = s;
