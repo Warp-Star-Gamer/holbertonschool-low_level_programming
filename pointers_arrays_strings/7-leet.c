@@ -9,7 +9,7 @@
 */
 char *leet(char *s) {
 const char table[] = {
-'a','4','e','3','o','0','t','7','l','1'};
+'a', '4', 'e', '3', 'o', '0', 't', '7', 'l', '1'};
 char *head = s;
 int i;
 while (*s)
