@@ -18,7 +18,7 @@ while (*src_end)
 src_end++;
 while(*dst_end)
 dst_end++;
-new_dest = dest; // secure version ==> (char*)malloc((src_end - src) + (dst_end - dest) + 1);
+new_dest = dest; /* secure version ==> (char*)malloc((src_end - src) + (dst_end - dest) + 1); */
 if(new_dest)
 {
 write = new_dest;
