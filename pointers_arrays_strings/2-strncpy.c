@@ -15,10 +15,9 @@ if (n != 0)
 {
 char *d = dest;
 char *s = src;
-do
-{
+do {
 *d++ = *s++;
-if (*(s-1) == 0)
+if (*(s - 1) == 0)
 {
 while (--n != 0)
 *d++ = 0;
