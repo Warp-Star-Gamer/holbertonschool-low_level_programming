@@ -8,7 +8,7 @@
 * @src: string
 * Return: string
 */
-char* _strcat(char* dest, char* src)
+char *_strcat(char *dest, char *src)
 {
 char *src_end = src;
 char *dst_end = dest;
