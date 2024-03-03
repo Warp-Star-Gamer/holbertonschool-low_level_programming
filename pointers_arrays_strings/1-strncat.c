@@ -17,13 +17,13 @@ char *write;
 int written_count = 0;
 while (*dst_end)
 dst_end++;
-new_dest = (char*)malloc(n + (dst_end - dest) + 1);
+new_dest = dest /* (char*)malloc(n + (dst_end - dest) + 1); */
 if (new_dest)
 {
 write = new_dest;
-while(*dest)
+while (*dest)
 *write++ = *dest++;
-while(*src && (written_count < n))
+while (*src && (written_count < n))
 {
 *write++ = *src++;
 written_count++;
@@ -35,7 +35,7 @@ return (new_dest);
 
 // EXERCICE 2
 /**
-* _strncat - concatenates strings
+* _strncpy - concatenates strings
 * @dest: string
 * @src: string
 * @n: integer
@@ -51,11 +51,11 @@ do
 {
 if ((*d++ = *s++) == 0)
 {
-while(--n != 0)
+while (--n != 0)
 *d++ = 0;
 break;
 }
-} while(--n != 0);
+} while (--n != 0);
 }
 return (dest);
 }
