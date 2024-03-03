@@ -11,17 +11,14 @@
 */
 char *_strncpy(char *dest, char *src, int n)
 {
-char* d;
-char *s;
-char t;
 if (n != 0)
 {
-d = dest;
-s = src;
-do {
-t = *d;
+char *d = dest;
+char *s = src;
+do
+{
 *d++ = *s++;
-if (t == 0)
+if (*d == 0)
 {
 while (--n != 0)
 *d++ = 0;
