@@ -18,7 +18,7 @@ char *s = src;
 do
 {
 *d++ = *s++;
-if (*d == 0)
+if (*s == 0)
 {
 while (--n != 0)
 *d++ = 0;
